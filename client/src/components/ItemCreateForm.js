@@ -73,6 +73,7 @@ const ItemCreateForm = (props) => {
           className="form-control m-2"
           value={values.price}
           style={{ backgroundColor: "#b4d9ad", border: "none" }}
+          autocomplete="off"
         />
       </div>
       <button

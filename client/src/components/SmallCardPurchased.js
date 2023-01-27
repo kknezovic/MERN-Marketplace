@@ -36,7 +36,7 @@ const SmallCardPurchased = ({ item, session, orderedBy }) => {
                 >
                   {currencyFormatterItem({
                     amount: item.price,
-                    currency: "hrk",
+                    currency: "eur",
                   })}
                 </span>
               </h3>

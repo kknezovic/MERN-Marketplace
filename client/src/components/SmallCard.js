@@ -38,7 +38,7 @@ const SmallCard = ({
                 >
                   {currencyFormatterItem({
                     amount: it.price,
-                    currency: "hrk",
+                    currency: "eur",
                   })}
                 </span>
               </h3>

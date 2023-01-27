@@ -75,7 +75,7 @@ const ViewItem = () => {
               className="mt-3"
               style={{ color: "#009E4F", fontWeight: "bold", fontSize: "21px" }}
             >
-              {item.price} HRK
+              {item.price} EUR
             </p>
             <span
               className="float-right"

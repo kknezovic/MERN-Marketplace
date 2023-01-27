@@ -27,7 +27,7 @@ export const createConnectAccount = async (req, res) => {
     return_url: process.env.STRIPE_REDIRECT_URL,
     type: "account_onboarding",
   });
-  //generirat link i poslat ga na frontend(u njega ukomponirat email)
+  //generirat link i poslat ga na frontend
   let link = `${accountLink.url}?${queryString.stringify(accountLink)}`;
   //console.log("LOGIN LINK", link);
   res.send(link);
@@ -73,7 +73,7 @@ export const stripeSessionId = async (req, res) => {
     line_items: [
       {
         price_data: {
-          currency: "hrk",
+          currency: "eur",
           unit_amount: item.price * 100,
           product_data: {
             name: item.title,
@@ -83,7 +83,7 @@ export const stripeSessionId = async (req, res) => {
       },
     ],
     payment_intent_data: {
-      application_fee_amount: fee * 100, //u lipama
+      application_fee_amount: fee * 100, 
       transfer_data: {
         destination: item.postedBy.stripe_account_id,
       },

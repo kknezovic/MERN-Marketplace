@@ -8,7 +8,7 @@ import UpdateItemForm from "../components/UpdateItemForm";
 const UpdateItem = () => {
   const params = useParams();
   const [preview, setPreview] = useState(
-    "https://via.placeholder.com/100x100.png?text=image"
+    "https://via.placeholder.com/100"
   );
   const { auth } = useSelector((state) => ({ ...state }));
 
